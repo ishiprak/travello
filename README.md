@@ -2,6 +2,7 @@
 A travelling planner app to assist the trippers.
 
 #Technologies used-
+
 -HTML5
 -CSS3
 -JS

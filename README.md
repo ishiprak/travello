@@ -3,8 +3,8 @@ A travelling planner app to assist the trippers.
 
 ## Technologies used-
 
-- HTML 5
-- CSS 3
+- HTML5
+- CSS3
 - JS (ES 6)
 - JQuery
 - Ajax (asynchronous call for data fetching from APIs)

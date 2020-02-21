@@ -7,7 +7,7 @@ A travelling planner app to assist the trippers.
 - CSS3
 - JS (ES 6)
 - JQuery
-- Ajax (asynchronous call for data fetching from APIs)
+- AJAX (asynchronous call for data fetching from APIs)
 - REST API
 - JSON (manipuation for retrived data)
 

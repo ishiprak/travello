@@ -38,9 +38,7 @@ function loadData() {
     var api_key="FPG1061kH7wjRbe5OTvOXrxxnFfjSpGS";
     var nyurl="https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+ct+"&sort=newest&api-key="+api_key;
     $.getJSON(nyurl,function(data){
-        //console.log(data);
         article=data.response.docs;
-        // console.log(article);
         if(article.length!=0)
         {
             $nytHeaderElem.text("New York Times Articles on "+ct);
@@ -74,14 +72,9 @@ function loadData() {
         dataType:"jsonp",
         success:function(data){
             //data=JSON.stringify(data);
-            //console.log(data);
-            //$("body").append("<div>"+data+"</div>");
             $wikih.text("Wikipedia articles on "+ct);
             articles=data["query"]["search"];
-            console.log(articles);
             // articles=data[1];
-            //console.log(articles[0]["title"]);
-            // $wikiElem.append("<ul class='wlinks'></ul>");
             if(articles.length!=0){
                 count=0;
                 for(var i=0;i<articles.length;i++){
@@ -94,7 +87,6 @@ function loadData() {
                     // alink=data[3][i];
                     // asnippet=data[2][i];
                     // adate="2019-02-02";
-                    // console.log(pthumb);
                     count=count+1;
                     alist.push(atitle);
                     aclass=articles[i].pageid;
@@ -113,25 +105,18 @@ function loadData() {
 
 
     function loadImage(alist){
-        // console.log(alist);
         alist=alist.join("|");
-        console.log(alist);
         athumb="static/travelbg.jpg";
         acaption="Figure Caption";
         athumburl="https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=pageimages%7Cpageterms&titles="+alist+"&piprop=thumbnail&pithumbsize=239&wbptterms=description&origin=*"
         // athumburl="https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages%7Cpageterms&generator=prefixsearch&redirects=1&formatversion=2&piprop=thumbnail&pithumbsize=239&pilimit=10&wbptterms=description&gpssearch="+ct+"&gpslimit=20&origin=*";
         $.getJSON(athumburl,function(data){
             athumb1=data.query.pages;
-            console.log(athumb1);
             if(athumb1.length!=0){
                 count=0;
                 for(i=0;i<athumb1.length;i++){
-                    // console.log(athumb)
                     athumb=athumb1[i].thumbnail;
                     count=count+1;
-                    // console.log(athumb);
-                    // console.log("yo"+count+"!!");
-                    
                     if(athumb!=undefined){
                         athumb=athumb.source;
                         athumbt=data.query.pages[i].pageid;
@@ -149,7 +134,6 @@ function loadData() {
                         acaption="Figure Caption";
                         athumbt=-1;
                     }
-                    console.log(athumbt);
                     $("."+athumbt+" img").attr("src",athumb);
                     $("."+athumbt+" figcaption").text(acaption);
                 }
@@ -161,7 +145,6 @@ function loadData() {
                 athumb="static/travelbg.jpg";
                 acaption="Figure Caption";
             }
-            // console.log(athumb);
             
         })
         .fail(function(e){

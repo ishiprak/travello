@@ -1,7 +1,7 @@
 # Travello
-A travelling planner app to assist the trippers.
+**A travelling planner app to assist the trippers.**
 
-**You can visit Travello at-** https://shivamprakash.me/travello 
+**You can visit the Travello web app at-** https://shivamprakash.me/travello 
 
 ### Technologies used-
 

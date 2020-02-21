@@ -1,7 +1,7 @@
-# travello
+# Travello
 A travelling planner app to assist the trippers.
 
-# Technologies used-
+## Technologies used-
 
 - HTML5
 - CSS3

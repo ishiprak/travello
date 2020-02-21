@@ -153,17 +153,10 @@ function loadData() {
         });
     }
 
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+/************************* Thumbnail loading using direct APi request (deprecated) ************************/
+    
 
     // //var purl="https://en.wikipedia.org/w/api.php?origin=*&action=query&prop=images&format=json&titles="+ct;
     // var purl="https://en.wikipedia.org/w/api.php?origin=*&format=json&action=query&prop=pageimages&titles="+ct;

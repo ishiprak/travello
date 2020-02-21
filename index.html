@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Moving Companion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Akronim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 id="greeting" class="greeting">Where do you want to live?</h1>
+    <form id="form-container" class="form-container">
+        <!-- <label for="street">Street: </label><input type="text" id="street" value=""> -->
+        <!-- <label for="city">City: </label>-->
+        <input type="text" style="overflow: hidden;" id="city" value="">
+        <button id="submit-btn"> Search </button>
+    </form>
+
+    <!-- <hr> -->
+
+    <div class="wikipedia-container">
+        <h3 style="text-align: center;" id="wikipedia-header">Relevant Wikipedia Links<br/><br/><span style="font-weight: lighter; font-size: 18px;">Type in an address above and find relevant Wikipedia articles here!</span> </h2>
+        <ul id="wikipedia-links" class="article-list"></ul>
+    </div>
+
+
+    <div class="nytimes-container" >
+        <h3 style="text-align: center;" id="nytimes-header">New York Times Articles<br/><br/><span style="font-weight: lighter; font-size: 18px;">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</span></h3>
+        <ul id="nytimes-articles" class="article-list"></div>
+    </div>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

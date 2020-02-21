@@ -5,7 +5,7 @@ A travelling planner app to assist the trippers.
 
 - HTML5
 - CSS3
-- JS
+- JS (ECMA 6)
 - JQuery
 - Ajax (asynchronous call for data fetching from APIs)
 - REST API

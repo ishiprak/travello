@@ -222,3 +222,66 @@ figure[class^="thumbnail"] figcaption{
     backdrop-filter: blur(5px);
    }
 
+.fa-beat {
+    animation:fa-beat 5s ease infinite;
+  }
+  @keyframes fa-beat {
+    0% {
+      transform:scale(1);
+    }
+    5% {
+      transform:scale(1.35);
+    }
+    20% {
+      transform:scale(1);
+    }
+    30% {
+      transform:scale(1);
+    }
+    35% {
+      transform:scale(1.35);
+    }
+    50% {
+      transform:scale(1);
+    }
+    55% {
+      transform:scale(1.35);
+    }
+    70% {
+      transform:scale(1);
+    }
+  }
+  
+
+footer{
+    /* color:darkorange;
+    color: rgb(255, 182, 118); */
+    color: rgb(228, 228, 0);
+    font-size: xx-large;
+    font-stretch: extra-expanded;
+    margin: 0;
+    margin-top: 160px;
+    padding: 0;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    background-color: rgba(255,255,255,0.3);   
+    backdrop-filter: blur(5px);
+    font-family: 'Akronim', cursive;
+}
+
+footer span{
+    display: inline-block;
+    margin-top: 35px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+footer a{
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+

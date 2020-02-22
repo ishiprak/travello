@@ -7,6 +7,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #CCC;
     background: url("../static/travelbg5.jpeg");
     /* background: url("http://farm4.staticflickr.com/3485/3288052387_716d3696d8_o.jpg"); */
@@ -257,7 +259,7 @@ footer{
     /* color:darkorange;
     color: rgb(255, 182, 118); */
     color: rgb(228, 228, 0);
-    font-size: xx-large;
+    font-size: x-large;
     font-stretch: extra-expanded;
     margin: 0;
     margin-top: 160px;

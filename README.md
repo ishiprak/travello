@@ -11,7 +11,7 @@
 - JQuery
 - AJAX (asynchronous call for data fetching from APIs)
 - REST API
-- JSON (manipuation for retrived data)
+- JSON (manipuation of retrived data)
 
 ### Working-
 

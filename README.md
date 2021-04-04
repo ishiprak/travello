@@ -7,7 +7,7 @@
 
 - HTML5
 - CSS3
-- JS (ES 6)
+- JS
 - JQuery
 - AJAX (asynchronous call for data fetching from APIs)
 - REST API
